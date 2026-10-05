@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Retailer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+        <div class="order-container">
+            <h1>Furniture  Booking</h1>
+
+            <form id="orderForm">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName">
+
+                <label for="productName">Product Name:</label>
+                <select id="productName">
+                    <option value="">Select Product</option>
+                    <option value="Couch">Couch</option>
+                    <option value="Desk">Desk</option>
+                    <option value="Bed Frame">Bed Frame</option>
+                </select>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity">
+
+                <label for="deliveryType">Delivery Type:</label>
+                <select id="deliveryType">
+                    <option value="">Select Delivery Option</option>
+                    <option value="Collection">Collection</option>
+                    <option value="Delivery">Delivery</option>
+                </select>
+
+                <label for="member">
+                    <input type="checkbox" id="memberStatus">
+                    Member Status
+                </label>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+            <div id="output">
+                <h2>Order Booked</h2>
+                <p>Your order details will appear here.</p>
+            </div>
+
+        </div>
+        <div id="orderlist"></div>
+
+        <h2>Order History</h2>
+        <label for="orderHistory">Existing Orders</label>
+        <select id="orderHistory">
+            <option value="All">All Existing Orders</option>
+            <option value="Pending">Order Pending</option>
+            <option value="Ready">Order Ready</option>
+        </select>
+
+        <div id="order-card"></div>
+
+        <div id="orderList"></div>
+
+        <script src="script.js"></script> 
+
+    </body>
+</html>
